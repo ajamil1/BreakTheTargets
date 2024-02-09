@@ -1,6 +1,8 @@
 # BreakTheTargets
 Unreal Engine Project, a mod for the VR title, "Pavlov"
 
+Video Link: https://medal.tv/games/pavlov-vr/clips/1oZnMCtY3_RuXV/XkFKrdmFH1iF?invite=cr-MSxFVDcsNzY3NTkyMTcs
+
 This was a project I underwent while being unemployed during the pandemic, as a recreational project to hone in on my conceptual knowledge of programming, and to be treated as my inrto into the world of Unreal Engine.
 
 This mod features a net-synced leaderboard, target placement, and score system. I will be going over how each system works.
