@@ -1,7 +1,7 @@
 # BreakTheTargets
 Unreal Engine Project, a mod for the VR title, "Pavlov"
 
-This was a project I udnerwent while being unemployed during the pandemic, as a recreational project to hone in on my conceptual knowledge of programming, and to be treated as my inrto into the world of Unreal Engine.
+This was a project I underwent while being unemployed during the pandemic, as a recreational project to hone in on my conceptual knowledge of programming, and to be treated as my inrto into the world of Unreal Engine.
 
 This mod features a net-synced leaderboard, target placement, and score system. I will be going over how each system works.
 
@@ -17,3 +17,5 @@ Everytime we increment the players score, we update the in-game leader scores, 1
 This is done by taking the current map of player and player scores, and splitting the player IDs and scores into two separate arrays. We obtain the index of the player ID, then match it with the index in the score array.
 We then check through several if-else statements on if the player's score is greater than third place, then second place, then first place.
 In addition to iterating through the current-game scores, we also have a separate server leaderboard that holds ten places for score holders and their names. The current players score from the latest target hit will be checked, iterating through all ten score positions on the leaderboard, similarly to how the current-game leaderboard check works.
+
+A game will last for 120 seconds. When a game ends, we take the player who had the highest score within the game, and displays their name as the winner on round end. Then a timer to reset the game starts. When the timer hits zero, everyones score gets overwritten when the map sets all the players scores to zero, then the loop begins again.
